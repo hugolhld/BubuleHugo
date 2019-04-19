@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubulle Game</title>
+    <link rel="icon" type="images/icon" href="images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.google.com/?query=Josefin+Sans&selection.family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="styles/game.css">
+</head>
+<body class="unscrollableX">
+    <header id="header">
+            <div class="gameRules">
+                    <h1 id="text">Fishing regulation</h1> 
+                    <img id="closeCross" class="buttonHover"  src="images/x-circle (1).svg" alt="cross">
+              <div class="twofirstimg">
+                   <div class="display1">
+                       <img id="stopshark" src="images/shark1.png" alt="shark interdiction">
+                       <img id="stopAlgues" src="images/stopAlgues.png" alt="algues interdiction">
+                      
+                   </div>
+                   <div class="display2">
+                       <img id="stopwaste" src="images/stopwaste.png" alt="waste interdiction">
+                       <img id="stopturtle" src="images/stopturtle.png" alt="turtle interdiction">
+                   </div>
+                   <div class="display3">
+                       <h3 class="pressD">Press "D" for using the dynamite</h3>
+                       <img id="yesgoldfish" src="images/yesgoldfish.png" alt="goldfish yes">
+                       <img id="yesfish" src="images/yesfish2.png" alt="yesfish yes">
+                   </div>
+               </div>
+           </div>
+        <div class="container flex">
+            <h1 class="pseudo">Pseudo</h1>
+            <div class="buttonMarket dynamites buttonHover">
+                <img src="images/dynamite.png" alt="dynamite">
+                <p id="dynamiteNumber">2</p>
+                <p class="more">+</p>
+                <div class="subMenuDynamites subMenu">
+                    <div  id="addDyn" class="blocDynamite blocMarket">
+                        <img src="images/blocDynamite.svg" alt="dynamite">
+                        <p>x3</p>
+                        <p>1 000</p>
+                        <img src="images/coin.png" alt="coin">
+                    </div>
+                </div>
+            </div>
+            <div class="buttonMarket boats buttonHover">
+                <p>Boat level</p>
+                <p id="levelBoat">1</p>
+                <img id="levelUp" src="images/levelUp.png" alt="levelUp">
+                <div class="subMenuBoats subMenu">
+                    <div class="blocBoat blocMarket" id="upgradeBoat">
+                        <img id="fisherBoatImage" src="images/FisherMan2.png" alt="boat">
+                        <div class="boatCoin">
+                            <p id = "priceBoat">300</p>
+                            <img src="images/coin.png" alt="coin">
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="coin buttonMarket">
+                <p class="totalCoin">0</p>
+                <img src="images/coin.png" alt="coin">
+            </div>
+            <img class="buttonHover" src="images/settings.png" alt="setting" id="setting">
+            <div class="subMenuSettings buttonHover subMenu">
+                <div class="iconesSettings">
+                    <div>
+                        <div class="sounds icones">
+                            <img src="images/volume.png" alt="volume">
+                            <p class="soundsOffOn">On</p>
+                        </div>
+                        <div class="music icones">
+                            <img src="images/music.png" alt="music">
+                            <p class="musicOffOn">On</p>
+                        </div>
+                        <div class="rules icones">
+                            <img src="images/bookOpen.png" alt="book">
+                            <p>Rules</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="socialNetworks">
+                    <a href="https://www.facebook.com" title="Facebook page"><img src="images/facebook.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com" title="Instagram page"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.twitter.com" title="Twitter page"><img src="images/twitter.png" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="buttonStartContainer">
+            <div class="buttonStart"><p>Let's Go Fishing</p></div>
+        </div>
+        <div class="buttonHook">
+            <img src="images/anchor.png" alt="anchor" id="anchor">
+            <p>Hook</p>
+            <p>+1 fish</p>
+            <div class="priceHook">
+                <p id = "price">100</p>
+                <img src="images/coin.png" alt="coin">
+            </div>
+            <div class="levelHook">
+                <p>Level</p>
+                <p id ="levelHook">1</p>
+            </div>
+        </div>
+        <div class="numberFish">
+            <p id="numberFishCaught"></p>
+            <p>/</p>
+            <p id="numberFishPossible">1</p>
+        </div>
+    </header>
+    <div class="background">
+        <img src="images/Island.svg" alt="Island" id="island"/>
+        <img src="images/Path.png" alt="sea" id="path1">
+        <img src="images/Path2.png" alt="sea" id="path2">
+        <div class="gradient"></div>
+        <img src="images/FisherMan.png" alt="FisherMan" id="fisherMan">
+        <div class="graduation" id="g1"><p>0m</p></div>
+        <div class="graduation" id="g2"><p>10m</p></div>
+        <div class="graduation" id="g3"><p>20m</p></div>
+        <div class="graduation" id="g4"><p>30m</p></div>
+        <div class="graduation" id="g5"><p>40m</p></div>
+        <div class="graduation" id="g6"><p>50m</p></div>
+        <div class="graduation" id="g7"><p>60m</p></div>
+        <div class="graduation" id="g8"><p>70m</p></div>
+        <div class="graduation" id="g9"><p>80m</p></div>
+        <div class="graduation" id="g10"><p>90m</p></div>
+        <div class="graduation" id="g11"><p>100m</p></div>
+    </div>
+    <div id="fishContainer" class="backgroundAnim">
+        
+    </div>
+
+    
+    
+    <!-- Music game -->
+    <audio class="musicAudio" 
+    src="sounds/music.mp3"
+    loop
+    ></audio>
+
+    <!-- Sounds game -->
+    <audio class="soundsAudio coinSoundUse" 
+    src="sounds/coin.mp3"
+    ></audio>
+
+    <audio class="soundsAudio deathSoundUse" 
+    src="sounds/death.mp3"
+    ></audio>
+
+    <audio class="soundsAudio explosionSoundUse" 
+    src="sounds/explosion.mp3"
+    ></audio>
+
+    <audio class="soundsAudio waterSoundUse" 
+    src="sounds/waterDrop.mp3"
+    ></audio>
+
+    <script src="scripts/game.js"></script>
+</body>
+</html>

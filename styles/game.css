@@ -1,0 +1,692 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Roboto', 'Arial', sans-serif;
+    font-size: 62,5%;
+    color: #444;
+    overflow: hidden;
+    height: 100%;
+}
+
+.container{
+    width : 95%;
+    margin : 0 auto;
+    height : 100%;
+    display: flex; 
+    flex-direction: row;
+}
+
+#header{
+    width: 100%;
+    background: #eb8e8e;
+    height: 50px;
+    margin-top: 0;
+}
+
+h1{
+    margin: 5px;
+    font-weight: lighter;
+    color: black;
+}
+
+.flex{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+/*Button dynamite*/
+
+.buttonMarket{
+    border: 1px solid #E3ACAC;
+    background-color: #E3ACAC;
+    margin: 5px;
+    border-radius: 20px;
+    display: flex;
+    width: 13%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dynamites{
+    position: relative;
+}
+
+.dynamites img{
+    width: 20%;
+}
+
+.more{
+    color: yellow;
+    font-size: 2em;
+}
+
+.buttonHover:hover .more{
+    font-size: 2.5em;
+
+}
+
+.buttonHover:hover{
+    cursor: pointer;
+}
+
+
+/*Button Boats*/
+
+.boats{
+    position: relative;
+}
+
+#levelUp{
+    width: 9%;
+}
+
+.buttonHover:hover #levelUp{
+    width: 11%;        
+}   
+
+#level{
+    font-weight: bolder;
+}
+
+.blocBoat{
+    display: flex;
+    flex-direction: column;
+}
+
+.blocBoat p{
+    margin: 0 10%;
+
+}
+
+.boatCoin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+/*Button coin*/
+
+.coin {
+    justify-content: space-around;
+}
+
+.coin p{
+    margin: 0 10%;
+    font-weight: bolder;
+}
+
+
+#setting{
+    height: 95%;
+    width: auto;
+    margin-top: 1px;
+    position: relative;
+}
+/* 
+BODY
+*/
+
+.subMenu{
+    background-color: #eb8e8e;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: -4;
+    margin-top: 50px;
+}
+
+.subMenuDynamitesOpen{
+    padding-top: 25px;
+    width: 100%;
+    display: block;
+}
+
+.subMenuDynamites{
+    display: none;
+}
+
+.subMenuBoatsOpen{
+    width: 100%;
+    display: block;
+    padding-top: 100px;
+}
+
+.subMenuBoats{
+    display: none;
+}
+
+.subMenuWormsOpen{
+    padding-top: 80px;
+    width: 15%;
+    display: block;
+}
+
+.subMenuWorms{
+    display: none;
+}
+
+.blocDynamite img{
+    width: 13%;
+    margin: 0;
+}
+
+.blocBoat #fisherBoatImage{
+    width: 100%;
+    padding-top: 50%;
+}
+
+.blocWorm img{
+    width: 13%;
+    margin: 0;
+}
+
+.blocDynamite p{
+    margin: 5%;
+}
+
+.blocMarket{
+    border: 1px solid #E3ACAC;
+    background-color: #E3ACAC;
+    margin: 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Settings*/
+
+.subMenuSettingsOpen{
+    height: 25%;
+    display: block;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    right: 3%;
+    top: -20px;
+    padding-top: 2%;
+}
+
+.subMenuSettings{
+    display: none;
+}
+
+.iconesSettings{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rules img{
+    width: 30%;
+}
+
+.icones img{
+    height: 5%;
+    width: 20%;
+}
+
+.icones{
+    display: flex;
+    align-items: center;
+}
+
+.icones p{
+    margin-left: 20%;
+}
+
+/*socialNetworks*/
+
+.socialNetworks{
+    display: flex;
+    justify-content: center;
+}
+
+.socialNetworks img{
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+}
+
+.socialNetworks a{
+    height: auto;
+    margin: auto;
+}
+
+/* 
+BODY
+*/
+
+.background{
+    width: 100%;
+}
+
+#island {
+    position : absolute;
+    width : 700px;
+    top : 110px;
+    z-index : -10;
+    cursor: auto;
+}
+
+#path1{
+    position : absolute; 
+    top : 710px;
+    height : 581px;
+    z-index : 1;
+    width: 100%;
+}
+
+#path2{
+    position : absolute; 
+    top : 697px;
+    width : 100%;
+}
+
+.gradient{
+    position : absolute;
+    background-image : linear-gradient(#AEE4FF, #071635);
+    height : 9000px;
+    width : 100%;
+    top : 1291px;
+}
+
+.graduation {
+    display: flex;
+    width : 50px;
+    height : 10px;
+    background-color: white; 
+    position : absolute; 
+    border-radius: 5px;
+    z-index : 2;
+    left : -10px;
+}
+
+#g1{
+    top : 750px
+}
+#g2{
+    top : 1500px;
+}
+#g3{
+    top : 2250px;
+}
+#g4{
+    top : 3000px;
+}
+#g5{
+    top : 3750px;
+}
+#g6{
+    top : 4500px;
+}
+#g7{
+    top : 5250px;
+}
+#g8{
+    top : 6000px;
+}
+#g9{
+    top : 6750px;
+}
+#g10{
+    top : 7500px;
+}
+#g11{
+    top : 8250px;
+}
+
+.graduation p{
+    color: white; 
+    position : absolute;
+    left : 60px;
+    top : -20px;
+}
+
+#fisherMan{
+    width : 400px;
+    position : absolute; 
+    top : 445px;
+    left : 70%;
+    cursor: auto;
+}
+
+/*Button start*/
+.buttonStart{
+    background-color: #eb8e8e;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 50px;
+    width: 15%;
+    cursor: pointer;
+    display: none;
+    box-shadow:10px 10px 10px #A16E6E;
+}
+
+.buttonStartContainer {
+    height: auto;
+}
+
+.buttonStart p{
+    text-align: center;
+}
+
+/*Button Hook*/
+.buttonHook{
+    background-color: #2E92C0;
+    border-radius: 10px;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -5% auto;
+    color: white;
+    box-shadow:10px 10px 10px #3D6678;
+    cursor: pointer;
+}
+
+.levelHook{
+    display: flex;
+}
+
+.levelHook p{
+    margin-left: 5px;
+}
+
+.buttonHook img#anchor{
+    width: 40%;
+    height: auto;
+    margin-top: 10%;
+}
+
+.priceHook{
+    display: flex;
+    font-weight: bolder;
+    align-items: center;
+}
+
+.priceHook img{
+    height: 10%;
+    margin-left: 10px;
+}
+
+
+/* Number fish*/
+.numberFish{
+    border : 5px solid #EB8E8E;
+    border-radius : 20px;
+    display: flex;
+    width: 5%;
+    color: black;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    top: 38%;
+    right: 10px;
+    visibility: hidden;
+}
+
+
+/* anime */
+.fish
+{
+    animation: test 15s infinite;
+    transition : left 5s linear;
+    position: absolute;
+    z-index: 11;
+    width: 50%;
+}
+
+
+@keyframes test {
+    0% {
+        transform: scale(1, 1);
+    }
+    7% {
+        transform: scale(1, 0.9) 
+    }
+    14% {
+        transform: scale(1, 1) 
+    }
+    21% {
+        transform: scale(1, 0.9) 
+    }
+    28% {
+        transform: scale(1, 0.9) 
+    }
+    35% {
+        transform: scale(1, 1) 
+    }
+    43% {
+        transform: scale(1, 0.9) 
+    }
+    50% {
+        transform: scale(1, 0.9) 
+    }
+    57% {
+        transform: scale(1, 1) 
+    }
+    64% {
+        transform: scale(1, 0.9) 
+    }
+    71% {
+        transform: scale(1, 0.9) 
+    }
+    78% {
+        transform: scale(1, 1) 
+    }
+    85% {
+        transform: scale(1, 0.9) 
+    }
+    93% {
+        transform: scale(1, 0.9) 
+    }
+    98% {
+        transform: scale(1, 0.90) 
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.right {
+	animation: left 15s infinite;
+}
+@keyframes left {
+    0% {
+        transform: translateX(110vw);
+    }
+    100% {
+        transform: translateX(-10vw);
+    }
+}
+.left {
+	animation: right 15s infinite;
+}
+@keyframes right {
+    0% {
+        transform: translateX(-10vw);
+    }
+    100% {
+        transform: translateX(110vw);
+    }
+}
+
+.fixed{
+    position: fixed;
+}
+
+.background, .backgroundAnim{
+    position: relative;
+    cursor: url("https://s3-eu-west-1.amazonaws.com/sc-files.pjms.fr/p/pjms/823/000/097/160/7e637f9bc3134f3d8b344ca1bb8ca1d1.png")90 70,auto;
+}
+
+.backgroundAnim{
+    position: relative;
+}
+
+/*DIMENSION FISH*/
+#f0{
+    width: 200px;
+}
+#f1{
+    width: 200px;
+}
+#f2{
+    width: 200px;
+}
+#f3{
+    width: 200px;
+}
+#f4{
+    width: 200px;
+}
+#f5{
+    width: 220px;
+}
+#f6{
+    width: 160px;
+}
+#f7{
+    width: 900px;
+}
+#f8{
+    width: 150px;
+}
+#f9{
+    width: 200px;
+}
+#f10{
+    width: 500px;
+}
+#f11{
+    width: 180px;
+}
+#f12{
+    width: 175px;
+}
+#f13{
+    width: 180px;
+}
+#f14{
+    width: 150px;
+}
+#f15{
+    width: 150px;
+}
+#f16{
+    width: 70px;
+}
+#f17{
+    width: 200px;
+}
+#f18{
+    width: 160px;
+}
+#f19{
+    width: 60px;
+}
+#f20{
+    width: 320px;
+}
+#f21{
+    width: 150px;
+}
+#f22{
+    width: 70px;
+}
+#f23{
+    width: 150px;
+}
+#f24{
+    width: 50px;
+}
+
+.gameRules{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.651);
+    display: block;
+    z-index: 100;
+    font-family: 'Josefin Sans';
+    position: fixed;
+    height: 100%;
+}
+
+#text{
+    padding-left: 40%; 
+    margin-top: 4%;
+    z-index:3;
+    color:#000000;
+    position: absolute;
+    font-size: 54px;
+}
+
+.twofirstimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10%;
+}
+.twofirstimg img{
+    margin-top: 80%;
+    margin: 5px 20px;
+    width: 15.75rem;
+    height: 15.875rem;
+    z-index: 10;
+} 
+.display1{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.display2{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+         
+}
+.display3{
+    z-index: 2;
+}
+
+#stopturtle{
+    margin-top: 11%;
+}
+
+#stopAlgues{
+    margin-top: 15%;
+}
+#stopwaste{
+    margin-bottom:5%; 
+}
+
+#stopshark{
+    margin-top: 2%;
+   
+}
+#close{
+ width: 3%;
+ z-index:3;
+ float: right;
+ margin-top: 2%;
+ margin-right: 2%;    
+
+}
+#closeCross{
+    width: 3%; 
+    float: right;   
+    margin-right: 2.5%;
+    margin-top: 4%;
+}
+.pressD{
+    text-align: center;
+    font-size: 35px;
+    padding-top: 10px;
+}
